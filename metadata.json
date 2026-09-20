@@ -1,0 +1,6 @@
+{
+  "name": "KisanMitra AI — Smart Farming & Farmer Empowerment Platform",
+  "description": "Comprehensive smart farming platform for Indian farmers featuring AI crop disease detection, multilingual voice assistant, smart IoT soil moisture monitoring, fertilizer advisory, direct farmer marketplace, and government scheme discovery.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
