@@ -78,7 +78,7 @@ let soilHistory = [
 app.get('/api/health', (_req: Request, res: Response) => {
   res.json({
     status: 'healthy',
-    platform: 'KisanMitra AI',
+    platform: 'Agrovision AI',
     hasGeminiKey: Boolean(process.env.GEMINI_API_KEY),
     time: new Date().toISOString(),
   });
@@ -336,7 +336,7 @@ Perform disease diagnosis and return ONLY a valid JSON object matching this sche
 });
 
 /* ----------------------------------------------------
- * B. MULTILINGUAL AI FARMER ASSISTANT (KISANMITRA ASSISTANT)
+ * B. MULTILINGUAL AI FARMER ASSISTANT (AGROVISION ASSISTANT)
  * ---------------------------------------------------- */
 app.post('/api/ai/assistant', async (req: Request, res: Response) => {
   try {
@@ -364,7 +364,7 @@ app.post('/api/ai/assistant', async (req: Request, res: Response) => {
 
     if (ai) {
       try {
-        const systemInstruction = `You are "KisanMitra Assistant" (కిసాన్ మిత్ర / किसान मित्र), an empathetic, deeply knowledgeable AI agricultural advisor dedicated to Indian farmers.
+        const systemInstruction = `You are "Agrovision Assistant" (అగ్రోవిజన్ / एग्रोविज़न), an empathetic, deeply knowledgeable AI agricultural advisor dedicated to Indian farmers.
 Target language for your response: ${targetLang}.
 Guidelines:
 1. Always reply primarily in the farmer's selected language (${targetLang}).
@@ -430,7 +430,7 @@ Farmer Profile Context:
 - **మిరప (తేజా కారం రకం - గుంటూరు):** క్వింటాల్‌కు ₹18,400 - ₹21,200 (+₹400 పెరుగుదల)
 - **టమోటా (మదనపల్లె):** క్రేట్ (25 కిలోలు) ₹580 - ₹720
 - **పత్తి (మధ్యస్థ పింజ):** క్వింటాల్‌కు ₹7,100 - ₹7,450
-కిసాన్ మిత్ర "మార్కెట్ ప్లేస్" ద్వారా దళారులు లేకుండా నేరుగా కొనుగోలుదారులతో మాట్లాడి మంచి ధర పొందవచ్చు.`;
+అగ్రోవిజన్ "మార్కెట్ ప్లేస్" ద్వారా దళారులు లేకుండా నేరుగా కొనుగోలుదారులతో మాట్లాడి మంచి ధర పొందవచ్చు.`;
       } else if (m.includes('పథకం') || m.includes('స్కీమ్') || m.includes('కిసాన్') || m.includes('సబ్సిడీ') || m.includes('డబ్బు')) {
         fallbackReply = `రైతు మిత్రమా 🏛️
 ప్రస్తుతం అందుబాటులో ఉన్న ముఖ్యమైన ప్రభుత్వ పథకాలు:
@@ -440,7 +440,7 @@ Farmer Profile Context:
 మా "ప్రభుత్వ పథకాల" ట్యాబ్ లో మీ వివరాలు నమోదు చేసి నేరుగా దరఖాస్తు చేసుకోవచ్చు.`;
       } else {
         fallbackReply = `నమస్కారం రైతు మిత్రమా! 🙏
-నేను కిసాన్ మిత్ర AI వ్యవసాయ సహాయకుడిని. మీరు నన్ను వీటిపై అడగవచ్చు:
+నేను అగ్రోవిజన్ AI వ్యవసాయ సహాయకుడిని. మీరు నన్ను వీటిపై అడగవచ్చు:
 - 🌾 **పంటల సాగు & ఎరువుల మోతాదు** (వరి, మిరప, పత్తి, టమోటా తదితరాలు)
 - 🐛 **తెగుళ్ల నివారణ & ఆర్గానిక్ కషాయాలు** (నీమ్ ఆయిల్, జీవామృతం)
 - 💧 **నేల తేమ & నీటి యాజమాన్యం**
@@ -466,10 +466,10 @@ Farmer Profile Context:
 - **गेहूं (शरबती/लोकवान):** ₹2,450 - ₹2,750 प्रति क्विंटल
 - **टमाटर (देसी/हाइब्रिड):** ₹18 - ₹28 प्रति किलो (मंडी अनुसार)
 - **कपास:** ₹7,100 - ₹7,500 प्रति क्विंटल
-किसान मित्र मार्केटप्लेस पर अपनी उपज बिना बिचौलियों के सीधे खरीदारों को बेचें।`;
+एग्रोविज़न मार्केटप्लेस पर अपनी उपज बिना बिचौलियों के सीधे खरीदारों को बेचें।`;
       } else {
         fallbackReply = `नमस्ते किसान भाई! 🙏
-मैं किसान मित्र AI सहायक हूँ। आप मुझसे फसल सुरक्षा, पत्ती रोग पहचान, खाद की सही मात्रा, सिंचाई समय और सरकारी योजनाओं (PM-KISAN, फसल बीमा) के बारे में बेझिझक पूछ सकते हैं। आप बोलकर भी सवाल पूछ सकते हैं!`;
+मैं एग्रोविज़न AI सहायक हूँ। आप मुझसे फसल सुरक्षा, पत्ती रोग पहचान, खाद की सही मात्रा, सिंचाई समय और सरकारी योजनाओं (PM-KISAN, फसल बीमा) के बारे में बेझिझक पूछ सकते हैं। आप बोलकर भी सवाल पूछ सकते हैं!`;
       }
     } else {
       fallbackReply = `Hello Farmer friend! 🌾
@@ -518,7 +518,7 @@ app.get('/api/iot/soil-moisture', (_req: Request, res: Response) => {
       reportingIntervalSeconds: 300,
     },
     arduinoCodeSnippet: `/*
- * KisanMitra AI - ESP32 Soil Moisture & Temp Telemetry
+ * Agrovision AI - ESP32 Soil Moisture & Temp Telemetry
  * HTTP REST Client for Indian Farmers
  */
 #include <WiFi.h>
@@ -920,7 +920,7 @@ app.get('/api/ai/unified-recommendations', (_req: Request, res: Response) => {
       timestamp: 'Yesterday',
       title: 'Market Opportunity: Chilli Mandi Rate Surge',
       message:
-        'Guntur APMC benchmark price climbed +₹400/Qtl today due to export demand. Your dry chilli stock has high buyer inquiries on the KisanMitra Marketplace.',
+        'Guntur APMC benchmark price climbed +₹400/Qtl today due to export demand. Your dry chilli stock has high buyer inquiries on the Agrovision Marketplace.',
       priority: 'medium',
       icon: 'TrendingUp',
       category: 'market',
@@ -974,7 +974,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`KisanMitra AI Server running on http://0.0.0.0:${PORT}`);
+    console.log(`Agrovision AI Server running on http://0.0.0.0:${PORT}`);
   });
 }
 

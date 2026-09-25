@@ -516,7 +516,7 @@ export const INITIAL_RECOMMENDATIONS: UnifiedRecommendation[] = [
     timestamp: 'Yesterday',
     title: 'Market Opportunity: Chilli Mandi Rate Surge',
     message:
-      'Guntur APMC benchmark price climbed +₹400/Qtl today due to export demand. Your dry chilli stock has high buyer inquiries on the KisanMitra Marketplace.',
+      'Guntur APMC benchmark price climbed +₹400/Qtl today due to export demand. Your dry chilli stock has high buyer inquiries on the Agrovision Marketplace.',
     priority: 'medium',
     icon: 'TrendingUp',
     category: 'market',

@@ -34,7 +34,7 @@ export const AdminView: React.FC = () => {
           <span>Platform Administration & Agronomic Analytics</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-stone-950 font-serif">
-          KisanMitra AI — Central Admin Command Center
+          Agrovision AI — Central Admin Command Center
         </h1>
         <p className="text-xs sm:text-sm text-stone-600 mt-1">
           Monitor national sensor network health, marketplace crop transactions, AI vision model diagnostics, and verified government scheme feeds.

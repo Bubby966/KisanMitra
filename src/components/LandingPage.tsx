@@ -105,7 +105,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     {
       num: '04',
       title: 'Harvest & Sell Direct',
-      desc: 'List harvest on the KisanMitra Marketplace and capture transparent APMC premium prices.'
+      desc: 'List harvest on the Agrovision Marketplace and capture transparent APMC premium prices.'
     }
   ];
 
@@ -131,14 +131,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       village: 'Miryalaguda, Nalgonda (TS)',
       crop: 'Guntur Chillies',
       quote:
-        '“Selling my dry chillies through the KisanMitra Marketplace gave me ₹220/kg compared to ₹185 offered by local commission agents in the market.”',
+        '“Selling my dry chillies through the Agrovision Marketplace gave me ₹220/kg compared to ₹185 offered by local commission agents in the market.”',
       stat: '+19% Income Gain'
     }
   ];
 
   const faqs = [
     {
-      q: 'Can I use KisanMitra AI if I cannot read or type English?',
+      q: 'Can I use Agrovision AI if I cannot read or type English?',
       a: 'Yes, absolutely! The application is fully multilingual and supports Telugu, Hindi, Tamil, Kannada, Marathi, Bengali, and English. You can even tap the microphone button to speak your farming query in your native dialect and listen to voice responses.'
     },
     {
@@ -147,7 +147,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     },
     {
       q: 'Do I need expensive hardware for the Soil Moisture module?',
-      a: 'Not at all! KisanMitra works seamlessly with ultra-affordable ESP32 or Arduino microcontrollers paired with standard ₹150 capacitive soil moisture probes. We also provide interactive simulation modes and copyable Arduino code right inside the app.'
+      a: 'Not at all! Agrovision works seamlessly with ultra-affordable ESP32 or Arduino microcontrollers paired with standard ₹150 capacitive soil moisture probes. We also provide interactive simulation modes and copyable Arduino code right inside the app.'
     },
     {
       q: 'Are the government schemes official and up-to-date?',
@@ -257,7 +257,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-2">Core Challenges</h2>
             <h3 className="text-3xl font-extrabold text-stone-950 font-serif">Bridging the Agricultural Knowledge Gap</h3>
             <p className="text-stone-600 text-sm mt-2">
-              Indian farmers face fragmented challenges that compound into crop loss and debt. KisanMitra connects every dot into a single digital companion.
+              Indian farmers face fragmented challenges that compound into crop loss and debt. Agrovision connects every dot into a single digital companion.
             </p>
           </div>
 
@@ -292,7 +292,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-6">
               <div className="flex items-center gap-2 text-emerald-800 font-bold text-base mb-4">
                 <span className="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center text-xs text-emerald-800">✓</span>
-                The KisanMitra AI Solution
+                The Agrovision AI Solution
               </div>
               <ul className="space-y-3 text-xs text-stone-700">
                 <li className="flex items-start gap-2">
@@ -369,7 +369,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-2">Seamless Workflow</h2>
-            <h3 className="text-3xl font-extrabold text-stone-950 font-serif">How KisanMitra Works in 4 Steps</h3>
+            <h3 className="text-3xl font-extrabold text-stone-950 font-serif">How Agrovision Works in 4 Steps</h3>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -524,7 +524,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-white font-serif font-bold text-sm">
             <Sprout className="w-4 h-4 text-emerald-400" />
-            <span>KisanMitra AI</span>
+            <span>Agrovision AI</span>
             <span className="text-stone-500 font-sans font-normal text-xs">— Empowering Indian Agriculture</span>
           </div>
           <p className="text-stone-500 text-center sm:text-right text-[11px]">

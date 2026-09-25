@@ -17,7 +17,8 @@ import {
   ChevronRight,
   RefreshCw,
   Camera,
-  Layers
+  Layers,
+  FolderLock
 } from 'lucide-react';
 import { Language, FarmerProfile, SoilTelemetry, CropScanResult } from '../types';
 import { MANDI_PRICES } from '../data/mockData';
@@ -162,6 +163,15 @@ export const FarmerDashboard: React.FC<FarmerDashboardProps> = ({
       color: 'bg-lime-50 text-lime-800 border-lime-200',
       badge: 'Kharif 2024',
       cta: 'Manage Farm',
+    },
+    {
+      id: 'google-drive',
+      title: t('googleDrive', language) || 'Google Drive',
+      subtitle: 'Patta Passbook, Soil Card & Diagnostic Vault',
+      icon: FolderLock,
+      color: 'bg-emerald-50 text-emerald-800 border-emerald-300',
+      badge: 'Cloud Vault',
+      cta: 'Open Drive Vault',
     },
   ];
 

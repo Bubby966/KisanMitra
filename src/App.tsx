@@ -11,6 +11,7 @@ import { GovSchemesView } from './components/GovSchemesView';
 import { WeatherView } from './components/WeatherView';
 import { MyFarmView } from './components/MyFarmView';
 import { AdminView } from './components/AdminView';
+import { GoogleDriveView } from './components/GoogleDriveView';
 import { Language, UserRole, FarmerProfile, SoilTelemetry, CropScanResult } from './types';
 import { MOCK_FARMER_PROFILE, INITIAL_SOIL_TELEMETRY, INITIAL_CROP_SCANS } from './data/mockData';
 import { PhoneCall, Heart, Sprout } from 'lucide-react';
@@ -103,6 +104,15 @@ export default function App() {
         )}
 
         {currentView === 'admin' && <AdminView />}
+
+        {currentView === 'google-drive' && (
+          <GoogleDriveView
+            farmerProfile={farmerProfile}
+            soilTelemetry={soilTelemetry}
+            recentScan={recentScan}
+            language={language}
+          />
+        )}
       </main>
 
       {/* Global Quick Action Floating Bar on Mobile */}
@@ -122,10 +132,10 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 pb-6 border-b border-stone-800">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-emerald-800 text-emerald-200 flex items-center justify-center font-bold">
-                KM
+                AV
               </div>
               <div>
-                <div className="text-white font-bold text-sm">KisanMitra AI (కిసాన్ మిత్ర / किसान मित्र)</div>
+                <div className="text-white font-bold text-sm">Agrovision AI (అగ్రోవిజన్ / एग्रोविज़न)</div>
                 <div className="text-[11px] text-stone-400">
                   Smart Farming & Farmer Empowerment Platform for Indian Agriculture
                 </div>
@@ -147,7 +157,7 @@ export default function App() {
           </div>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-stone-500">
-            <p>© 2024-2025 KisanMitra AI. Built for Bharat's farmers with Gemini AI & ESP32 IoT.</p>
+            <p>© 2024-2025 Agrovision AI. Built for Bharat's farmers with Gemini AI & ESP32 IoT.</p>
             <p className="flex items-center gap-1">
               Developed with agronomic precision for sustainable farming.
             </p>

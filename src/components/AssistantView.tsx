@@ -41,10 +41,10 @@ export const AssistantView: React.FC<AssistantViewProps> = ({
       sender: 'assistant',
       text:
         language === 'te'
-          ? `నమస్కారం ${farmerProfile.name} గారూ! 🙏 నేను మీ కిసాన్ మిత్ర AI వ్యవసాయ సహాయకుడిని. మీ వరి, టమోటా పంటల తెగుళ్లు, నేల తేమ, ఎరువుల మోతాదు, లేదా పిఎం-కిసాన్ పథకాల గురించి నన్ను ఏ ప్రశ్న అయినా అడగవచ్చు. మాట్లాడటానికి క్రింది మైక్రోఫోన్ బటన్ నొక్కండి!`
+          ? `నమస్కారం ${farmerProfile.name} గారూ! 🙏 నేను మీ అగ్రోవిజన్ AI వ్యవసాయ సహాయకుడిని. మీ వరి, టమోటా పంటల తెగుళ్లు, నేల తేమ, ఎరువుల మోతాదు, లేదా పిఎం-కిసాన్ పథకాల గురించి నన్ను ఏ ప్రశ్న అయినా అడగవచ్చు. మాట్లాడటానికి క్రింది మైక్రోఫోన్ బటన్ నొక్కండి!`
           : language === 'hi'
-          ? `नमस्ते ${farmerProfile.name} जी! 🙏 मैं आपका किसान मित्र AI कृषि सहायक हूँ। आप मुझसे धान, टमाटर की फसल सुरक्षा, खाद की मात्रा, सिंचाई समय या सरकारी योजनाओं के बारे में पूछ सकते हैं। बोलकर पूछने के लिए माइक दबाएं!`
-          : `Namaste ${farmerProfile.name}! 🙏 I am your KisanMitra AI Agricultural Assistant. Ask me anything about crop diseases, balanced fertilizer doses, irrigation schedules, mandi rates, or government schemes. Tap the microphone to speak!`,
+          ? `नमस्ते ${farmerProfile.name} जी! 🙏 मैं आपका एग्रोविज़न AI कृषि सहायक हूँ। आप मुझसे धान, टमाटर की फसल सुरक्षा, खाद की मात्रा, सिंचाई समय या सरकारी योजनाओं के बारे में पूछ सकते हैं। बोलकर पूछने के लिए माइक दबाएं!`
+          : `Namaste ${farmerProfile.name}! 🙏 I am your Agrovision AI Agricultural Assistant. Ask me anything about crop diseases, balanced fertilizer doses, irrigation schedules, mandi rates, or government schemes. Tap the microphone to speak!`,
       timestamp: 'Just now',
     },
   ]);
@@ -252,7 +252,7 @@ export const AssistantView: React.FC<AssistantViewProps> = ({
             <span>Voice & Text Multilingual AI</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-stone-950 font-serif">
-            KisanMitra Assistant (కిసాన్ మిత్ర / किसान मित्र)
+            Agrovision Assistant (అగ్రోవిజన్ / एग्रोविज़न)
           </h1>
           <p className="text-xs sm:text-sm text-stone-600 mt-1">
             Friendly agricultural AI for Indian farmers. Speak or write in your native language.
@@ -344,7 +344,7 @@ export const AssistantView: React.FC<AssistantViewProps> = ({
               </div>
               <div className="bg-white border border-stone-200 rounded-2xl rounded-tl-xs px-4 py-3 text-xs text-stone-600 flex items-center gap-2 shadow-xs">
                 <RefreshCw className="w-4 h-4 animate-spin text-emerald-700" />
-                <span>KisanMitra Assistant is thinking in your language...</span>
+                <span>Agrovision Assistant is thinking in your language...</span>
               </div>
             </div>
           )}

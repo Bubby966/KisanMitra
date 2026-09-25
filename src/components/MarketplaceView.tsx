@@ -173,7 +173,7 @@ export const MarketplaceView: React.FC<MarketplaceViewProps> = ({
             <span>0% Commission Direct Agri-Market</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-stone-950 font-serif">
-            KisanMitra Marketplace (రైతు బజార్ / किसान मंडी)
+            Agrovision Marketplace (రైతు బజార్ / किसान मंडी)
           </h1>
           <p className="text-xs sm:text-sm text-stone-600 mt-1">
             Eliminating middlemen: Direct farm-to-table trade with transparent APMC benchmark pricing.

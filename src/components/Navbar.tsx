@@ -14,7 +14,8 @@ import {
   ShieldCheck,
   Tractor,
   Home,
-  Check
+  Check,
+  FolderLock
 } from 'lucide-react';
 import { Language, UserRole } from '../types';
 import { LANGUAGE_OPTIONS } from '../data/mockData';
@@ -54,6 +55,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'schemes', label: t('govSchemes', language), icon: Building2 },
     { id: 'weather', label: t('weather', language), icon: CloudSun },
     { id: 'my-farm', label: t('myFarm', language), icon: Tractor },
+    { id: 'google-drive', label: t('googleDrive', language) || 'Google Drive', icon: FolderLock },
   ];
 
   return (
@@ -63,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center gap-1 font-medium text-emerald-200">
             <Sprout className="w-3.5 h-3.5 text-emerald-400" />
-            KisanMitra AI — Krishi Sahayak & Mandi Network
+            Agrovision AI — Krishi Sahayak & Mandi Network
           </span>
           <span className="hidden sm:inline-block text-emerald-300/40">|</span>
           <span className="hidden md:inline-flex items-center gap-1 text-emerald-200/90">
@@ -207,7 +209,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div>
             <div className="flex items-center gap-1.5">
               <span className="text-xl font-extrabold tracking-tight text-emerald-950 font-serif">
-                KisanMitra
+                Agrovision
               </span>
               <span className="bg-emerald-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded tracking-wide">
                 AI
